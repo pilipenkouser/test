@@ -1,0 +1,91 @@
+@import '~reset-css/_reset.scss';
+
+body {}
+
+.content {}
+
+.controls {
+	display: flex;
+	align-items: center;
+	padding: 20px ;
+
+	&__color {
+		display: flex;
+		align-items: center;
+	}
+
+	&__title {
+		font-size: 20px;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin: 0 5px;
+	}
+
+	&__link {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 1px solid transparent;
+
+		&-red {
+			background: #f00;
+		}
+		&-green {
+			background: #0f0;
+		}
+		&-blue {
+			background: #00f;
+		}
+
+		&-active {
+			border: 1px solid #555;
+		}
+	}
+
+	&__size {
+		padding: 0 30px;
+
+		&_label {
+			display: flex;
+			align-items: center;
+		}
+
+		&_input {
+			width: 50px;
+			height: 20px;
+			border: 1px solid #aaa;
+			margin: 0 5px;
+		}
+	}
+
+	&__size-canvas {
+		display: flex;
+
+		&_label {
+			padding: 0 5px;
+		}
+	}
+
+	&__select {
+		height: 24px;
+		padding: 0 10px;
+		border: 1px solid #aaa;
+		margin: 0 5px;
+	}
+}
+
+
+
+.canvas {
+	border:1px solid #aaa;
+	box-sizing: border-box;
+
+	&-wrapper {
+		width: 100%;
+	}
+}

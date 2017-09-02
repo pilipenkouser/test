@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+
+	<div class="content">
+		<div class="controls">
+			<div class="controls__color">
+				<p class="controls__title">Color:</p>
+				<ul class="controls__list color-list">
+					<li class="controls__item">
+						<a id="red-pen" href="javascript:;" data-color="#f00" class="controls__link controls__link-red controls__link-active"></a>
+					</li>
+					<li class="controls__item">
+						<a id="green-pen" href="javascript:;" data-color="#0f0" class="controls__link controls__link-green"></a>
+					</li>
+					<li class="controls__item">
+						<a id="blue-pen" href="javascript:;" data-color="#00f" class="controls__link controls__link-blue"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="controls__size">
+				<label for="size-pen" class="controls__size_label">
+					<p class="controls__title">Size:</p>
+					<input id="size-pen" class="controls__size_input" type="number" value="5">
+					<span class="controls__text">px</span>
+				</label>
+			</div>
+			<div class="controls__size-canvas">
+				<label class="controls__size-canvas_label controls__size_label">
+					<p class="controls__title">Width:</p>
+					<input id="width-canvas" class="controls__size_input" type="number" value="500">
+					<span class="controls__text">px</span>
+				</label>
+				<label class="controls__size-canvas_label controls__size_label">
+					<p class="controls__title">Height:</p>
+					<input id="height-canvas" class="controls__size_input" type="number" value="300">
+					<span class="controls__text">px</span>
+				</label>
+			</div>
+			<div class="controls__buttons">
+				<button id="save-canvas" class="controls__btn controls__btn-save">save</button>
+				<button id="clear-canvas" class="controls__btn controls__btn-clear">clear</button>
+			</div>
+		</div>
+		<div class="canvas-wrapper">
+			<canvas id="drawingCanvas" class="canvas" width="500" height="300"></canvas>
+		</div>
+		<div class="saved"></div>
+	</div>
+	
+	<script type="text/javascript" src="app/bundle.js"></script>
+</body>
+</html>
